@@ -1,0 +1,87 @@
+.App {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 0 0;
+  padding: 10px;
+}
+.App h1 {
+  margin-bottom: 30px;
+}
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 14px;
+}
+.TodoListStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+
+  padding: 1rem;
+  border-radius: 30px;
+  margin: 1rem;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  text-align: start;
+  align-items: center;
+}
+.todo:first-child {
+  gap: 20rem;
+}
+.todo div:nth-child(2) {
+  display: flex;
+}
+.completed {
+  color: rgba(75, 143, 99, 0.45);
+  text-decoration: line-through;
+}
+input {
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 3px;
+  gap: 0.5rem;
+}
+input:focus {
+  border: 2px solid blueviolet;
+}
+
+.btn {
+  color: #6d28d9;
+  background-color: #fff;
+  border: 1px solid #6d28d9;
+  outline: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.remove {
+  color: red;
+  border: 1px solid red;
+  margin-left: 1rem;
+}
+.Add {
+  background-color: #6d28d9;
+  color: #fff;
+  margin-left: 1rem;
+}
+.update {
+  color: #6d28d9;
+  background-color: #fff;
+}
+.Add:hover {
+  box-shadow: inset 1px 1px 2px gray;
+}
