@@ -1,13 +1,31 @@
-const Todo = ({ Todos, onComplete , onDelete , onEdit}) => {
+import { AiFillEdit } from "react-icons/ai";
+import { AiOutlineCheck } from "react-icons/ai";
+
+const Todo = ({ Todos, onComplete, onDelete, onEdit }) => {
   return (
-    <div>
+    <div className="todoContainer">
       <div className="todo">
-        <div  onClick={onComplete} className={Todos.isCompleted === true ? "completed" : ""}>
+        <h4
+          onClick={onComplete}
+          className={`todoText ${
+            Todos.isCompleted === true ? "completed" : ""
+          }`}
+        >
           {Todos.inputText}
-        </div>
+        </h4>
         <div>
-          <button className="btn" onClick={onEdit}>Edit</button>
-          <button  className="btn remove" onClick={onDelete} >Delete</button>
+          <button
+            className="btn"
+            onClick={onComplete}
+          >
+            {<AiOutlineCheck className="icon" />}
+          </button>
+          <button className="btn" onClick={onEdit}>
+            {<AiFillEdit className="icon" />}
+          </button>
+          <button className="btn remove" onClick={onDelete}>
+            Delete
+          </button>
         </div>
       </div>
     </div>
