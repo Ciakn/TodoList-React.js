@@ -95,3 +95,8 @@ margin-left: 0.5rem;
 header {
   margin-bottom: 1rem;
 }
+@media (max-width: 800px){
+  .Container{
+    width: auto;
+  }
+}
